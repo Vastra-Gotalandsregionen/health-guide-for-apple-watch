@@ -14,7 +14,7 @@
             <objects>
                 <controller id="gE9-p2-Mo6" customClass="VGRInterfaceController" customModule="vgr_WatchKit_Extension">
                     <items>
-                        <button width="1" alignment="left" title="Button" id="sHd-qK-SDc">
+                        <button width="1" alignment="left" title="Ny hälsokoll" id="sHd-qK-SDc">
                             <connections>
                                 <action selector="startListening" destination="gE9-p2-Mo6" id="hQm-VM-IDM"/>
                             </connections>

@@ -23,7 +23,10 @@ struct InteractionHandler {
                 return interaction
             }
         }
-        return nil
+        return genericInteraction()
     }
 
+    private func genericInteraction() -> Interaction {
+        return Interaction(keyword: "", answer: "Jag är ledsen, men jag har inte något tips på detta besvär ännu. Vill du pröva på nytt?")
+    }
 }
