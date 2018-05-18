@@ -5,7 +5,6 @@ class InteractionInterfaceController: WKInterfaceController {
     var interactionHandler = InteractionHandler()
     var currentInteraction: Interaction?
     
-    
     @IBOutlet var answerLabel: WKInterfaceLabel!
     
     override func awake(withContext context: Any?) {
@@ -43,6 +42,8 @@ class InteractionInterfaceController: WKInterfaceController {
                 self.showAnswer()
 
                 self.updateQuestions(result)
+            } else {
+                self.answerLabel.setText(nil)
             }
         }
     }

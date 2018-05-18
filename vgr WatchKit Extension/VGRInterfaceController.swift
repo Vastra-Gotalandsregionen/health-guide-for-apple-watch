@@ -20,10 +20,6 @@ class VGRInterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
-    override func didAppear() {
-        
-    }
-    
     func updateQuestions(_ question: String) {
         questions.append(question)
         setupTable()
