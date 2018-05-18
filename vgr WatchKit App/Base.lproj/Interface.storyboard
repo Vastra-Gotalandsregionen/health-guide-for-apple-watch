@@ -14,19 +14,39 @@
             <objects>
                 <controller id="gE9-p2-Mo6" customClass="VGRInterfaceController" customModule="vgr_WatchKit_Extension">
                     <items>
-                        <button width="1" alignment="left" title="Ny hälsokoll" id="sHd-qK-SDc">
+                        <button width="1" height="64" alignment="left" title="Ny hälsokoll" id="sHd-qK-SDc">
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="startListening" destination="gE9-p2-Mo6" id="hQm-VM-IDM"/>
                             </connections>
                         </button>
-                        <label alignment="left" text="Label" numberOfLines="0" id="jL0-uO-Dw3"/>
+                        <label alignment="left" text="-" numberOfLines="0" id="jL0-uO-Dw3"/>
+                        <table alignment="left" id="zd8-GD-cVh">
+                            <items>
+                                <tableRow identifier="HistoryTableRowController" id="GjG-86-asK" customClass="HistoryTableRowController" customModule="vgr_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="1a7-aK-hXe">
+                                        <items>
+                                            <label alignment="left" text="Label" numberOfLines="0" id="AMk-pd-zNF">
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <edgeInsets key="margins" left="10" right="10" top="5" bottom="5"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="historyLabel" destination="AMk-pd-zNF" id="Hro-JI-0LS"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
                     </items>
                     <connections>
                         <outlet property="answerLabel" destination="jL0-uO-Dw3" id="oCA-Ve-f4X"/>
+                        <outlet property="historyTable" destination="zd8-GD-cVh" id="CTA-Hw-tPi"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="112" y="180"/>
+            <point key="canvasLocation" x="111.58974358974359" y="179.15384615384616"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

@@ -38,6 +38,19 @@ class InteractionHandlerTests: XCTestCase {
         }
         
         XCTAssertEqual(foundInteraction.answer, "svar: förkylning")
+    }
+    
+    func testThatGenericInteractionIsReturnedIfNotFound() {
+        sut.newInteraction(interaction: Interaction(keyword: "snuva", answer: "svar: snuva"))
+        sut.newInteraction(interaction: Interaction(keyword: "Hosta", answer: "svar: Hosta"))
+        sut.newInteraction(interaction: Interaction(keyword: "förkylning", answer: "svar: förkylning"))
+        sut.newInteraction(interaction: Interaction(keyword: "flämta", answer: "svar: flämta"))
         
+        guard let foundInteraction = sut.findInteraction(question: "finns inte") else {
+            XCTFail("no interaction found")
+            return
+        }
+        
+        XCTAssertEqual(foundInteraction.keyword, "generic")
     }
 }
