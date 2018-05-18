@@ -18,9 +18,9 @@
                             <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="startListening" destination="gE9-p2-Mo6" id="hQm-VM-IDM"/>
+                                <segue destination="Icr-MD-2Hk" kind="push" id="dQl-Hd-Zvo"/>
                             </connections>
                         </button>
-                        <label alignment="left" text="-" numberOfLines="0" id="jL0-uO-Dw3"/>
                         <label alignment="center" text="Tidigare" textAlignment="center" id="mOf-Rw-tGE"/>
                         <table alignment="left" id="zd8-GD-cVh">
                             <items>
@@ -42,12 +42,25 @@
                         </table>
                     </items>
                     <connections>
-                        <outlet property="answerLabel" destination="jL0-uO-Dw3" id="oCA-Ve-f4X"/>
                         <outlet property="historyTable" destination="zd8-GD-cVh" id="CTA-Hw-tPi"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="111.58974358974359" y="179.15384615384616"/>
+        </scene>
+        <!--Interaction Interface Controller-->
+        <scene sceneID="ONh-FX-OgO">
+            <objects>
+                <controller id="Icr-MD-2Hk" customClass="InteractionInterfaceController" customModule="vgr_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Label" numberOfLines="0" id="aJU-Iw-lOh"/>
+                    </items>
+                    <connections>
+                        <outlet property="answerLabel" destination="aJU-Iw-lOh" id="ODr-Vl-i5f"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="443" y="179"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		522B926320AF049500B06FBC /* InteractionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B926220AF049500B06FBC /* InteractionInterfaceController.swift */; };
 		52779E5420AEFD0300B79B80 /* HistoryTableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52779E5320AEFD0300B79B80 /* HistoryTableRowController.swift */; };
 		52CABB4F20AEEB7B00B97321 /* VGRInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CABB4E20AEEB7B00B97321 /* VGRInterfaceController.swift */; };
 		52EB8C9E20AC52EE00142E20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB8C9D20AC52EE00142E20 /* AppDelegate.swift */; };
@@ -89,6 +90,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		522B926220AF049500B06FBC /* InteractionInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionInterfaceController.swift; sourceTree = "<group>"; };
 		52779E5320AEFD0300B79B80 /* HistoryTableRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableRowController.swift; sourceTree = "<group>"; };
 		52CABB4E20AEEB7B00B97321 /* VGRInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VGRInterfaceController.swift; sourceTree = "<group>"; };
 		52EB8C9A20AC52EE00142E20 /* vgr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vgr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				52CABB4E20AEEB7B00B97321 /* VGRInterfaceController.swift */,
+				522B926220AF049500B06FBC /* InteractionInterfaceController.swift */,
 				52779E5320AEFD0300B79B80 /* HistoryTableRowController.swift */,
 				52EB8CCD20AC52F000142E20 /* ExtensionDelegate.swift */,
 				52EB8CCF20AC52F000142E20 /* NotificationController.swift */,
@@ -408,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52CABB4F20AEEB7B00B97321 /* VGRInterfaceController.swift in Sources */,
+				522B926320AF049500B06FBC /* InteractionInterfaceController.swift in Sources */,
 				52EB8CD020AC52F000142E20 /* NotificationController.swift in Sources */,
 				52779E5420AEFD0300B79B80 /* HistoryTableRowController.swift in Sources */,
 				52EB8CF820AEAF6800142E20 /* Interaction.swift in Sources */,
