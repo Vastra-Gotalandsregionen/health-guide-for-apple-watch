@@ -21,6 +21,7 @@
                             </connections>
                         </button>
                         <label alignment="left" text="-" numberOfLines="0" id="jL0-uO-Dw3"/>
+                        <label alignment="center" text="Tidigare" textAlignment="center" id="mOf-Rw-tGE"/>
                         <table alignment="left" id="zd8-GD-cVh">
                             <items>
                                 <tableRow identifier="HistoryTableRowController" id="GjG-86-asK" customClass="HistoryTableRowController" customModule="vgr_WatchKit_Extension">
