@@ -54,9 +54,24 @@
                 <controller title="Hälsokollen" id="Icr-MD-2Hk" customClass="InteractionInterfaceController" customModule="vgr_WatchKit_Extension">
                     <items>
                         <label alignment="left" numberOfLines="0" id="aJU-Iw-lOh"/>
+                        <group width="1" alignment="left" hidden="YES" layout="vertical" id="Eqn-eP-LZU">
+                            <items>
+                                <button width="1" alignment="left" title="Ja" id="07C-kX-EmE">
+                                    <connections>
+                                        <action selector="yesTapped" destination="Icr-MD-2Hk" id="D4C-gT-xea"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="Nej" id="p2d-9S-pnr">
+                                    <connections>
+                                        <action selector="noTapped" destination="Icr-MD-2Hk" id="MeZ-bN-tsD"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                     </items>
                     <connections>
                         <outlet property="answerLabel" destination="aJU-Iw-lOh" id="ODr-Vl-i5f"/>
+                        <outlet property="buttonsGroup" destination="Eqn-eP-LZU" id="xh2-d4-78S"/>
                     </connections>
                 </controller>
             </objects>
